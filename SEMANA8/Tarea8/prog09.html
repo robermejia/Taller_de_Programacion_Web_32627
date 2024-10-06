@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+    <!-- seleccione el departamento muestre su imagen y su precio , luego seleccione el tipo de pasajero
+estudante, ni�o o adulto siendo el descuento 30%, 50% y 0 respectivamente -->
+    <center>
+        <h1>Prestamos </h1>
+        <div class="marco">
+            <form name="fr">
+                <table border=1>
+                    <tr>
+                        <td>nombre del pasajero
+                        <td><input name="tnom">
+                    <tr>
+                        <td>seleccione mes
+                        <td><select name="cbd" onchange="cambia()">
+                                <option value=0>elegir
+                                <option value=80>arequipa
+                                <option value=100>cuzco
+                                <option value=70>tacna
+                                <option value=50>ancash
+                                <option value=85>chiclayo
+                            </select>
+                    <tr>
+                        <td colspan=2 align=center><img name="foto" height=200 width=200>
+                    <tr>
+                        <td>Costo
+                        <td><input name="tcos">
+                    <tr>
+                        <td>tipo de pasajero
+                        <td>
+                            <input name="op" type="radio">Estudiante
+                            <input name="op" type="radio">ni�o
+                            <input name="op" type="radio">Adulto
+                    <tr>
+                        <td><input type="button" value="procesar">
+                    <tr>
+                        <td><textarea name="salida" rows=5 cols=30></textarea>
+                </table>
+            </form>
+        </div>
+    </center>
+    <script type="text/javascript">
+        function cambia() {
+        }
+
+    </script>
+</body>
+
+</html>

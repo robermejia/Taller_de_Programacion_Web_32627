@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<center>
+		<h1>Boleta de Nota</h1>
+		<div class="marco">
+			<form name="fr">
+				<table border=1>
+					<tr>
+						<td>Curso
+						<td><select name="cbc">
+								<option>Algoritmo
+								<option>Java
+								<option>Base de datos
+							</select>
+					<tr>
+						<td>Ingrese Practica1
+						<td><input name="t1">
+					<tr>
+						<td>Ingrese Practica2
+						<td><input name="t2">
+					<tr>
+						<td>Ingrese Practica3
+						<td><input name="t3">
+					<tr>
+						<td><input type="button" value="procesar" onclick="calculo()">
+					<tr>
+						<td><textarea name="salida" rows=5 cols=30></textarea>
+						<td><img name="foto" height="100" width="100">
+				</table>
+			</form>
+		</div>
+	</center>
+	<script type="text/javascript">
+		function calculo() { 
+			total = (Number(fr.t1.value) + Number(fr.t2.value) + Number(fr.t3.value)) / 3;
+			curso = fr.cbc.value;
+			fr.salida.value = "Curso: " + curso + "\nNota: " + total.toFixed(2); 
+		}
+	</script>
+
+
+</body>
+
+</html>
