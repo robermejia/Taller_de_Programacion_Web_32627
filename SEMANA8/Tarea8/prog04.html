@@ -1,10 +1,11 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
-
 <body>
     <center>
         <h1>Ecuacion de segundo grado</h1>
@@ -35,12 +36,10 @@
     </center>
     <script type="text/javascript">
         function calculo() {
-            // Obtener los coeficientes del formulario
             let a = parseFloat(document.fr.ta.value);
             let b = parseFloat(document.fr.tb.value);
             let c = parseFloat(document.fr.tc.value);
 
-            // Calcular el discriminante
             let discriminante = Math.pow(b, 2) - 4 * a * c;
 
             // Calcular las soluciones

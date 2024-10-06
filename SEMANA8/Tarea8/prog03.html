@@ -1,6 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
@@ -11,7 +14,7 @@
 				<table border=1>
 					<tr>
 						<td>Curso
-						<td><select name="cbc">
+						<td><select name="cbc" onchange="mostrarImagen()">
 								<option>Algoritmo
 								<option>Java
 								<option>Base de datos
@@ -40,9 +43,17 @@
 			curso = fr.cbc.value;
 			fr.salida.value = "Curso: " + curso + "\nNota: " + total.toFixed(2); 
 		}
+		function mostrarImagen() { 
+            curso = fr.cbc.value;
+            if (curso == "Algoritmo") {
+                fr.foto.src = "imagen/algoritmo.jpg"; 
+            } else if (curso == "Java") {
+                fr.foto.src = "imagen/java.jpg"; 
+            } else if (curso == "Base de datos") {
+                fr.foto.src = "imagen/bd.jpg";
+            }
+        }
 	</script>
-
-
 </body>
-
 </html>
+
